@@ -33,6 +33,14 @@ module mat_vec_mult #(
   logic next_state;
   logic curr_state;
 
+  logic a_full_and;
+  logic a_empty_and;
+  always_comb begin
+    for (integer i = 1; i < 8; i = i + 1) a_full_and = a_full[i] & a_full[i-1];
+  end
+  always_comb begin
+    for (integer i = 1; i < 8; i = i + 1) a_empty_and = a_empty[i] & a_empty[i-1];
+  end
   //state transition logic for state machine
   always_comb begin
     next_state = curr_state;
@@ -44,12 +52,13 @@ module mat_vec_mult #(
     if (curr_state == WORKING && a_empty.and()) next_state = IDLE;
     else next_state = WORKING;
     */
+    //TODO: replace all "and" functio calls with a for loop
     case (curr_state)
       IDLE: begin
-        if (a_full.and() && b_full) next_state = WORKING;
+        if (a_full_and && b_full) next_state = WORKING;
       end
       WORKING: begin
-        if (a_empty.and() && b_empty) next_state = IDLE;
+        if (a_empty_and && b_empty) next_state = IDLE;
       end
     endcase
   end
