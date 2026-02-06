@@ -80,7 +80,7 @@ mat_vec_mult iDUT (
   end
     //try driving the tasks (god please work)
     for (integer i = 0; i < 8; i = i + 1) begin
-      val_a[i] = 8'd2;
+      val_a[i] = 8'd10;
     end
     val_b=8'd2;
 
