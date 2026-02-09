@@ -29,15 +29,17 @@ localparam DEPTH = 8;
 
 
 // SM States
-localparam READ_MEM = 1'd0;
-localparam DONE     = 1'd1;
+localparam READ_MEM_A = 2'd0;
+localparam READ_MEM_B = 2'd1;
+localparam DONE     = 2'd2;
 
 // Signals
 wire rst_n;
 
 logic Clr;
 logic [DATA_WIDTH-1:0] a_fifo_in[DATA_WIDTH-1:0];
-logic [DATA_WIDTH-1:0] b_fifo_in;
+logic [DATA_WIDTH-1:0] b_fifo_in[DATA_WIDTH-1:0];
+logic [DATA_WIDTH-1:0] b_in;
 wire [DATA_WIDTH*3-1:0] out[DATA_WIDTH-1:0];
 wire [31:0] address;
 wire mem_rd_en;
@@ -46,9 +48,9 @@ wire [2:0] display;
 
 reg a_wren, b_wren;
 reg done;
-reg inc;
-reg state, nxt_state;
-reg [3:0] mem_rd_count;
+reg inc, inc_b;
+reg [1:0] state, nxt_state;
+reg [3:0] mem_rd_count, b_count;
 wire [63:0] data_line;
 
 wire readdatavalid, waitrequest;
@@ -95,7 +97,7 @@ mat_vec_mult #(.DEPTH(DEPTH), .DATA_WIDTH(DATA_WIDTH)) iMAC(
 	.a_wren(a_wren),
 	.b_wren(b_wren),
 	.a_fifo_in(a_fifo_in),
-	.b_fifo_in(b_fifo_in),
+	.b_fifo_in(b_in),
 	.out(out),
 	.done(done_wire)
 );
@@ -104,11 +106,10 @@ mat_vec_mult #(.DEPTH(DEPTH), .DATA_WIDTH(DATA_WIDTH)) iMAC(
 //  SM Time xD
 //=======================================================
 assign rst_n = KEY[0];
-assign mem_rd_en = nxt_state == READ_MEM;
+assign mem_rd_en = nxt_state == READ_MEM_A;
 assign address = {28'b0, mem_rd_count};
 assign display = {SW[3], SW[2], SW[1]};
 
-// i need to learn generates
 assign a_fifo_in[0] = data_line[ 7: 0];
 assign a_fifo_in[1] = data_line[15: 8];
 assign a_fifo_in[2] = data_line[23:16];
@@ -118,31 +119,55 @@ assign a_fifo_in[5] = data_line[47:40];
 assign a_fifo_in[6] = data_line[55:48];
 assign a_fifo_in[7] = data_line[63:56];
 
+assign b_fifo_in[7] = data_line[ 7: 0];
+assign b_fifo_in[6] = data_line[15: 8];
+assign b_fifo_in[5] = data_line[23:16];
+assign b_fifo_in[4] = data_line[31:24];
+assign b_fifo_in[3] = data_line[39:32];
+assign b_fifo_in[2] = data_line[47:40];
+assign b_fifo_in[1] = data_line[55:48];
+assign b_fifo_in[0] = data_line[63:56];
+
 always @(*) begin
 	case(state)
-		READ_MEM:
+		READ_MEM_A:
 		begin
 			macout <= {(DATA_WIDTH*3){1'b0}};
 			a_wren <= 1'b0;
 			b_wren <= 1'b0;
 			inc <= 1'b0;
+			inc_b <= 1'b0;
 			Clr <= 1'b0;
 
 			done <= 1'b0;
-			nxt_state <= READ_MEM;
-			if (readdatavalid && mem_rd_count == 4'd8) begin
-				b_fifo_in <= data_line;
-				b_wren <= 1'b1;
-				inc <= 1'b1;
-			end
+			nxt_state <= READ_MEM_A;
+			
+			if (readdatavalid && mem_rd_count == 4'd9)
+				nxt_state <= READ_MEM_B;
 			else if(readdatavalid) begin
 				a_wren <= 1'b1;
 				inc <= 1'b1;
 			end
-			else if (mem_rd_count == 4'd9)
-				nxt_state <= DONE;
 			else if (waitrequest && mem_rd_count == 4'd0)
 				Clr <= 1'b1;
+		end
+
+		READ_MEM_B:
+		begin
+			macout <= {(DATA_WIDTH*3){1'b0}};
+			a_wren <= 1'b0;
+			b_wren <= 1'b1;
+			inc <= 1'b0;
+			inc_b <= 1'b1;
+			Clr <= 1'b0;
+
+			b_in <= b_fifo_in[b_count];
+
+			nxt_state <= READ_MEM_B;
+
+			if (b_count == 4'd9)
+				nxt_state <= DONE;
+			
 		end
 
 		DONE:
@@ -151,6 +176,7 @@ always @(*) begin
 			a_wren <= 1'b0;
 			b_wren <= 1'b0;
 			inc <= 1'b0;
+			inc_b <= 1'b0;
 			Clr <= 1'b0;
 
 			done <= done_wire;
@@ -162,7 +188,7 @@ end
 
 always_ff @(posedge CLOCK_50, negedge rst_n) begin
 	if (!rst_n) 
-		state <= READ_MEM;
+		state <= READ_MEM_A;
 	else 
 		state <= nxt_state;
 end
@@ -172,6 +198,13 @@ always_ff @(posedge CLOCK_50, negedge rst_n) begin
 		mem_rd_count <= 4'b0;
 	else if(inc)
 		mem_rd_count <= mem_rd_count + 1'b1;
+end
+
+always_ff @(posedge CLOCK_50, negedge rst_n) begin
+	if (!rst_n) 
+		b_count <= 4'b0;
+	else if(inc_b)
+		b_count <= b_count + 1'b1;
 end
 
 

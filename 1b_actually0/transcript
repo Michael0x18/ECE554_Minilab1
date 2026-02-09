@@ -1684,3 +1684,416 @@ run -all
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
+# Expression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedadd wave -position insertpoint  \
+sim:/minilab1b_tb/iDUT/iMAC/a_fifo_in
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (1) for port 'LEDR'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'address'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/rom.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT/iRemember/memory File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/memory.v Line: 25
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/minilab1b_tb/iDUT/iMAC/b_fifo_in
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (1) for port 'LEDR'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'address'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/rom.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT/iRemember/memory File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/memory.v Line: 25
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Expression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/a_fifo_in[7] is not loggedadd wave -position insertpoint  \
+sim:/minilab1b_tb/iDUT/iMAC/shift_reg
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (1) for port 'LEDR'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'address'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/rom.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT/iRemember/memory File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/memory.v Line: 25
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint {sim:/minilab1b_tb/iDUT/iMAC/hw[7]/*}
+# ** UI-Msg: (vish-4014) No objects found matching '/minilab1b_tb/iDUT/iMAC/hw[7]/*'.
+add wave -position insertpoint  \
+{sim:/minilab1b_tb/iDUT/iMAC/hw[5]/#implicit-var#shift_reg##VarElem:[4.0.8]}
+# ** UI-Msg: (vish-4014) No objects found matching '/minilab1b_tb/iDUT/iMAC/hw[5]/#implicit-var#shift_reg##VarElem:[4.0.8]'.
+add wave -position insertpoint  \
+sim:/minilab1b_tb/iDUT/iMAC/b_vec/i_data
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (1) for port 'LEDR'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'address'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/rom.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT/iRemember/memory File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/memory.v Line: 25
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of m2.sv failed with 5 errors.
+# Compile of minilab1b.sv was successful.
+# 2 compiles, 1 failed with 5 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.minilab1b
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (1) for port 'LEDR'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'address'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/rom.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT/iRemember/memory File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/memory.v Line: 25
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of m2.sv failed with 5 errors.
+# Compile of minilab1b.sv failed with 1 errors.
+# 2 compiles, 2 failed with 6 errors.
+# Compile of m2.sv failed with 5 errors.
+# Compile of minilab1b.sv was successful.
+# 2 compiles, 1 failed with 5 errors.
+# Compile of m2.sv failed with 5 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.minilab1b
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (1) for port 'LEDR'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'address'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/rom.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT/iRemember/memory File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/memory.v Line: 25
+add wave -position insertpoint sim:/minilab1b_tb/iDUT/*
+add wave -position insertpoint  \
+sim:/minilab1b_tb/iDUT/iMAC/a_fifo_in
+add wave -position insertpoint  \
+sim:/minilab1b_tb/iDUT/iMAC/b_fifo_in
+# Compile of m2.sv failed with 5 errors.
+# Compile of minilab1b.sv failed with 1 errors.
+# 2 compiles, 2 failed with 6 errors.
+# Compile of m2.sv failed with 5 errors.
+# Compile of minilab1b.sv failed with 2 errors.
+# 2 compiles, 2 failed with 7 errors.
+# Compile of m2.sv failed with 5 errors.
+# Compile of minilab1b.sv was successful.
+# 2 compiles, 1 failed with 5 errors.
+add wave -position insertpoint sim:/minilab1b_tb/iDUT/*
+add wave -position insertpoint  \
+sim:/minilab1b_tb/iDUT/iMAC/a_fifo_in
+add wave -position insertpoint  \
+sim:/minilab1b_tb/iDUT/iMAC/b_fifo_in
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of m2.sv failed with 5 errors.
+# Compile of minilab1b.sv was successful.
+# 2 compiles, 1 failed with 5 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.minilab1b
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (1) for port 'LEDR'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'address'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/rom.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT/iRemember/memory File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/memory.v Line: 25
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+# Warning : Address pointed at port A is out of bound!
+# Time: 1325  Instance: minilab1b_tb.iDUT.iRemember.memory.altsyncram_component.m_default.altsyncram_inst
+# Warning : Address pointed at port A is out of bound!
+# Time: 1325  Instance: minilab1b_tb.iDUT.iRemember.memory.altsyncram_component.m_default.altsyncram_inst
+# Warning : Address pointed at port A is out of bound!
+# Time: 1455  Instance: minilab1b_tb.iDUT.iRemember.memory.altsyncram_component.m_default.altsyncram_inst
+# Warning : Address pointed at port A is out of bound!
+# Time: 1585  Instance: minilab1b_tb.iDUT.iRemember.memory.altsyncram_component.m_default.altsyncram_inst
+# Warning : Address pointed at port A is out of bound!
+# Time: 1715  Instance: minilab1b_tb.iDUT.iRemember.memory.altsyncram_component.m_default.altsyncram_inst
+# Warning : Address pointed at port A is out of bound!
+# Time: 1845  Instance: minilab1b_tb.iDUT.iRemember.memory.altsyncram_component.m_default.altsyncram_inst
+# Warning : Address pointed at port A is out of bound!
+# Time: 1975  Instance: minilab1b_tb.iDUT.iRemember.memory.altsyncram_component.m_default.altsyncram_inst
+# Compile of m2.sv failed with 5 errors.
+# Compile of minilab1b.sv was successful.
+# 2 compiles, 1 failed with 5 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.minilab1b
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (1) for port 'LEDR'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'address'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/rom.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT/iRemember/memory File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/memory.v Line: 25
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+# Display error! Expected: $d . Actual $d   52384    4812
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1585 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Expression input symbol /minilab1b_tb/iDUT/b_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/b_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/b_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/b_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/b_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/b_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/b_fifo_in[7] is not loggedExpression input symbol /minilab1b_tb/iDUT/b_fifo_in[7] is not loggedadd wave -position insertpoint  \
+sim:/minilab1b_tb/iDUT/b_in
+# Compile of m2.sv failed with 5 errors.
+# Compile of minilab1b.sv was successful.
+# 2 compiles, 1 failed with 5 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.minilab1b
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (1) for port 'LEDR'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'address'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/rom.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT/iRemember/memory File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/memory.v Line: 25
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of m2.sv failed with 5 errors.
+# Compile of minilab1b.sv was successful.
+# 2 compiles, 1 failed with 5 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.minilab1b
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (1) for port 'LEDR'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'address'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/rom.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT/iRemember/memory File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/memory.v Line: 25
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+# Display error! Expected: $d . Actual $d   53616    4812
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1585 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Display error! Expected: $d . Actual $d   52556   21772
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1595 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Display error! Expected: $d . Actual $d   51496   38732
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1605 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Display error! Expected: $d . Actual $d   50436   55692
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1615 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Display error! Expected: $d . Actual $d   49376   72652
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1625 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Display error! Expected: $d . Actual $d   48316   89612
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1635 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Display error! Expected: $d . Actual $d   47256  106572
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1645 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Display error! Expected: $d . Actual $d   46196  123532
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1655 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Display error! Expected: $d . Actual $d   53616    4812
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1665 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Display error! Expected: $d . Actual $d   52556   21772
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1675 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Display error! Expected: $d . Actual $d   51496   38732
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1685 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Display error! Expected: $d . Actual $d   50436   55692
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1695 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Display error! Expected: $d . Actual $d   49376   72652
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1705 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Display error! Expected: $d . Actual $d   48316   89612
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1715 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Display error! Expected: $d . Actual $d   47256  106572
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1725 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Display error! Expected: $d . Actual $d   46196  123532
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1735 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of m2.sv failed with 5 errors.
+# Compile of minilab1b.sv was successful.
+# 2 compiles, 1 failed with 5 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.minilab1b
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (1) for port 'LEDR'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'address'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/rom.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT/iRemember/memory File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/memory.v Line: 25
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+# Display error! Expected: $d . Actual $d   46196    4812
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1585 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Compile of m2.sv failed with 5 errors.
+# Compile of minilab1b_tb.sv was successful.
+# 2 compiles, 1 failed with 5 errors.
+add wave -position insertpoint  \
+sim:/minilab1b_tb/display_C0X
+add wave -position insertpoint  \
+sim:/minilab1b_tb/display_out
+add wave -position insertpoint  \
+sim:/minilab1b_tb/expected
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.minilab1b_tb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (1) for port 'LEDR'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'address'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/rom.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT/iRemember/memory File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/memory.v Line: 25
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+# Display error! Expected:    46196 . Actual     4812
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1585 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+run
+# Display error! Expected:    47256 . Actual    21772
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1595 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+run
+# Display error! Expected:    48316 . Actual    38732
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1605 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+run
+# Display error! Expected:    49376 . Actual    55692
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1615 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+run -all
+# Display error! Expected:    50436 . Actual    72652
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1625 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+run -all
+# Display error! Expected:    51496 . Actual    89612
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(60)
+#    Time: 1635 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 60
+# Compile of m2.sv failed with 5 errors.
+# Compile of minilab1b.sv was successful.
+# Compile of minilab1b_tb.sv was successful.
+# 3 compiles, 1 failed with 5 errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.minilab1b_tb
+# Loading work.minilab1b
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (1) for port 'LEDR'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b.sv(18).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'address'. The port definition is at: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/rom.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /minilab1b_tb/iDUT/iRemember/memory File: C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/memory.v Line: 25
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Display error! Expected:    53616 . Actual     4812
+# ** Note: $stop    : C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv(59)
+#    Time: 1585 ps  Iteration: 1  Instance: /minilab1b_tb
+# Break in Module minilab1b_tb at C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b_tb.sv line 59

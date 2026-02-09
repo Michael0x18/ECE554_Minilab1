@@ -3367,24 +3367,24 @@ R13
 R14
 vminilab1b
 R53
-!s110 1770660569
+Z75 !s110 1770663723
 !i10b 1
-!s100 DeZQX[V`eeSGdAg=0i:W[1
+!s100 BjWa5nQXUk``SMjJg^MZ91
 R55
-I:zQ4YYF2CX>YXGTgJTJ>i2
+IZkRPbjT3_S_KOzfFF[[`40
 R56
 S1
 R5
-w1770660563
+w1770663719
 8C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b.sv
 FC:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b.sv
-!i122 43
-L0 1 338
+!i122 53
+L0 1 371
 R58
 r1
 !s85 0
 31
-!s108 1770660569.000000
+Z76 !s108 1770663723.000000
 !s107 C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/jnoro/AppData/Local/quartus/ECE554SP26_Minilab1/1b_actually0/minilab1b.sv|
 !i113 1
@@ -3392,24 +3392,24 @@ R60
 R61
 vminilab1b_tb
 R53
-!s110 1770660204
+R75
 !i10b 1
-!s100 BDIgBbXGbQ5dON0lShm0M2
+!s100 ]jCRD2:[XcA_ERoCWmWZc1
 R55
-IUEem^;hTjP?n4hIh[e1@S3
+Ia7kOmOb5I3]aaVXZd5F_R3
 R56
 S1
 R5
-w1770660196
+w1770663642
 8C:\Users\jnoro\AppData\Local\quartus\ECE554SP26_Minilab1\1b_actually0\minilab1b_tb.sv
 FC:\Users\jnoro\AppData\Local\quartus\ECE554SP26_Minilab1\1b_actually0\minilab1b_tb.sv
-!i122 42
-L0 3 72
+!i122 54
+L0 3 71
 R58
 r1
 !s85 0
 31
-!s108 1770660204.000000
+R76
 !s107 C:\Users\jnoro\AppData\Local\quartus\ECE554SP26_Minilab1\1b_actually0\minilab1b_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\jnoro\AppData\Local\quartus\ECE554SP26_Minilab1\1b_actually0\minilab1b_tb.sv|
 !i113 1
@@ -3604,7 +3604,7 @@ R2
 R1
 R3
 R4
-Z75 DEx4 work 10 signal_gen 0 22 `2jX;eCLIIhi;NWcfz^Vn1
+Z77 DEx4 work 10 signal_gen 0 22 `2jX;eCLIIhi;NWcfz^Vn1
 !i122 36
 l51555
 L51397 206
@@ -3714,7 +3714,7 @@ R62
 R51
 R2
 R1
-R75
+R77
 R3
 R4
 !i122 36
@@ -3931,7 +3931,7 @@ R13
 R14
 Estratixiii_lvds_rx
 R0
-Z76 DEx4 work 26 stratixiii_lvds_rx_channel 0 22 gSWP_bWZ@W4<:Nbe@A9if0
+Z78 DEx4 work 26 stratixiii_lvds_rx_channel 0 22 gSWP_bWZ@W4<:Nbe@A9if0
 R2
 R3
 R4
@@ -3976,7 +3976,7 @@ R14
 Estratixiii_lvds_rx_channel
 R0
 R34
-Z77 DEx4 work 22 stratixiii_lvds_rx_dpa 0 22 f_WVz3I_F7nhN=:0LmGO>2
+Z79 DEx4 work 22 stratixiii_lvds_rx_dpa 0 22 f_WVz3I_F7nhN=:0LmGO>2
 R2
 R3
 R4
@@ -4002,7 +4002,7 @@ Abehavior
 R2
 R3
 R4
-R76
+R78
 !i122 36
 l33867
 L33762 446
@@ -4045,7 +4045,7 @@ Abehavior
 R2
 R3
 R4
-R77
+R79
 !i122 36
 l33410
 L33368 217

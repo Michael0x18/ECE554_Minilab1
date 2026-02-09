@@ -36,7 +36,6 @@ initial begin
   display_en = 1'b0;
   display_C0X = 3'b0;
 
-  // TODO: Populate expected!
   expected[0] = 24'd4812;
   expected[1] = 24'd21772;
   expected[2] = 24'd38732;
@@ -56,7 +55,7 @@ initial begin
     @(posedge clk)
 
     if (iDUT.macout !== expected[display_C0X]) begin
-      $display("Display error! Expected: $d . Actual $d", iDUT.macout, expected[display_C0X]);
+      $display("Display error! Expected: %d . Actual %d", expected[display_C0X],  iDUT.macout);
       $stop;
     end
   end
